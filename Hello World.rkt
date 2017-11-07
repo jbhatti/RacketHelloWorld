@@ -3,3 +3,10 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname |Hello World|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (+ 1 1)
 (string-append "hello " "world")
+(and (or
+      (=
+       (string-length "hello world")
+       (string->number "11")
+      )
+      (string=? "hello world" "good morning"))
+     (>= (+ (string-length "hello world") 60) 80))
