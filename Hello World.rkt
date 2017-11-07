@@ -11,3 +11,6 @@
       (string=? "hello world" "good morning"))
      (>= (+ (string-length "hello world") 60) 80))
 (circle 10 "solid" "red")
+(place-image (circle 5 "solid" "green")
+             50 80
+             (empty-scene 100 100))
